@@ -11,7 +11,7 @@
 	<div class="user-info">
 		<div>
 			<i component="user/status" class="status {users.status}" title="[[global:{users.status}]]"></i>
-			<a href="{config.relative_path}/user/{users.userslug}"> {users.username}</a>
+			<a href="{config.relative_path}/user/{users.userslug}"> {users.nickname}</a>
 		</div>
 
 		<!-- IF route_users:joindate -->
