@@ -5,11 +5,6 @@
 		<div class="col-md-4">
 			<div class="card">
 				<div class="card-body card-padding">
-					<!-- IF email -->
-					<div class="profile-label">[[user:email]]</div>
-					<div><i class="fa fa-eye-slash {emailClass}" title="[[user:email_hidden]]"></i> {email}</div>
-					<!-- ENDIF email -->
-
 					<!-- IF fullname -->
 					<div class="profile-label">[[user:fullname]]</div>
 					<div>{fullname}</div>

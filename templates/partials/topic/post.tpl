@@ -7,7 +7,7 @@
         <div class="poster-avatar hidden-xs">
             <a href="{config.relative_path}/user/{posts.user.userslug}">
                 <!-- IF posts.user.picture -->
-                <img src="{posts.user.picture}" class="user-picture" title="{posts.user.username}"/>
+                <img src="{posts.user.picture}" class="user-picture" title="{posts.user.nickname}"/>
                 <!-- ELSE -->
                 <div class="user-icon" style="background-color: {posts.user.icon:bgColor};">{posts.user.icon:text}</div>
                 <!-- ENDIF posts.user.picture -->
@@ -37,14 +37,14 @@
                 <div class="post-header">
                     <a class="pull-left visible-xs" href="{config.relative_path}/user/{posts.user.userslug}">
                         <!-- IF posts.user.picture -->
-                        <img src="{posts.user.picture}" class="post-user-picture" title="{posts.user.username}"/>
+                        <img src="{posts.user.picture}" class="post-user-picture" title="{posts.user.nickname}"/>
                         <!-- ELSE -->
                         <div class="user-icon post-user-picture" style="background-color: {posts.user.icon:bgColor};">{posts.user.icon:text}</div>
                         <!-- ENDIF posts.user.picture -->
                     </a>
 
                     <strong>
-                        <a href="<!-- IF posts.user.userslug -->{config.relative_path}/user/{posts.user.userslug}<!-- ELSE -->#<!-- ENDIF posts.user.userslug -->" itemprop="author" data-username="{posts.user.username}" data-uid="{posts.user.uid}">{posts.user.username}</a>
+                        <a href="<!-- IF posts.user.userslug -->{config.relative_path}/user/{posts.user.userslug}<!-- ELSE -->#<!-- ENDIF posts.user.userslug -->" itemprop="author" data-username="{posts.user.username}" data-uid="{posts.user.uid}">{posts.user.nickname}</a>
                     </strong>
                     <!-- IMPORT partials/topic/badge.tpl -->
                     <span class="post-time">

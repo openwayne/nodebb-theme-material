@@ -127,7 +127,7 @@
             <li id="user_label" class="dropdown">
                 <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="user_dropdown">
                     <!-- IF user.picture -->
-                    <img component="header/userpicture" src="{user.picture}" alt="{user.username}" class="user-picture" id="user-header-picture" />
+                    <img component="header/userpicture" src="{user.picture}" alt="{user.nickname}" class="user-picture" id="user-header-picture" />
                     <!-- ELSE -->
                     <div component="header/usericon" class="user-icon" style="background-color: {user.icon:bgColor};">{user.icon:text}</div>
                     <!-- ENDIF user.picture -->
@@ -135,7 +135,7 @@
                 <ul id="user-control-list" component="header/usercontrol" class="dropdown-menu pull-right" aria-labelledby="user_dropdown">
                     <li>
                         <a component="header/profilelink" id="user-profile-link" href="{relative_path}/user/{user.userslug}">
-                            <i component="user/status" class="status {user.status}"></i> <span component="header/username" id="user-header-name">{user.username}</span>
+                            <i component="user/status" class="status {user.status}"></i> <span component="header/username" id="user-header-name">{user.nickname}</span>
                         </a>
                     </li>
                     <li role="presentation" class="divider"></li>
